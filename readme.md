@@ -1,5 +1,7 @@
 # Azure IoT Hub for MicroPython
 
+**Please note that this is very early work in progress and many things are broken and/or will change.**
+
 Many small microcontrollers can run MicroPython nowadays, which speeds up development of proof of concepts greatly compared to using C/C++ or Arduino code. Unfortunately, Azure IoT Hub does not provide a MicroPython compatible SDK as the standard Python SDK is too big for cheap microcontrollers such as the ESP32 and incompatible.
 
 This project is a first attempt at wrapping the functions nescessary to communicate with Azure IoT Hub in a basic and light-weight library. It is currently a work in progress and only sending telemetry is functional (although direct methods/c2d msg/device twins are in the works). The library will need a connection string and will calculate the derived SAS token like the official SDK, it does not need a pre-calculated SAS token.
